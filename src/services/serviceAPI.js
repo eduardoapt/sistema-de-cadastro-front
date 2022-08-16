@@ -1,12 +1,14 @@
 import axios from "axios";
 
+const baseUrl = process.env.REACT_APP_API_URL;
+
 export default async function serviceAPI(caseInput, bodyValue) {
   switch (caseInput) {
     case "login": {
       try {
         const tryLogin = await axios({
           method: "post",
-          url: "http://localhost:8080/login",
+          url: `${baseUrl}/login`,
           data: bodyValue,
         });
         return tryLogin;
@@ -19,7 +21,7 @@ export default async function serviceAPI(caseInput, bodyValue) {
       try {
         const tryRegisterUser = await axios({
           method: "post",
-          url: "http://localhost:8080/user",
+          url: `${baseUrl}/user`,
           data: bodyValue,
         });
         return tryRegisterUser.data.message;
@@ -32,7 +34,7 @@ export default async function serviceAPI(caseInput, bodyValue) {
       try {
         const tryGetServiceList = await axios({
           method: "get",
-          url: "http://localhost:8080/costumerService",
+          url: `${baseUrl}/costumerService`,
           headers: { Authorization: `Bearer ${bodyValue}` },
         });
         return tryGetServiceList.data.customers;
@@ -47,7 +49,7 @@ export default async function serviceAPI(caseInput, bodyValue) {
       try {
         const tryGetServiceList = await axios({
           method: "post",
-          url: "http://localhost:8080/costumerService",
+          url: `${baseUrl}/costumerService`,
           data: bodyValue,
           headers: { Authorization: `Bearer ${setToken}` },
         });
