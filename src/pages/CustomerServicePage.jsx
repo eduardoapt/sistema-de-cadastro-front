@@ -58,16 +58,10 @@ const CustomerServicePage = () => {
               <h1>No. {element.serviceId}</h1>
               <h1>Nome {element.clientName}</h1>
               <h1>CPF {element.clientCPF}</h1>
-              <h1>Criado {moment(element.createdAt).format("DD/MM/YYYY")}</h1>
-              {element.receptionTime && (
-                <h1>{moment(element.receptionTime).format("DD/MM/YYYY")}</h1>
-              )}
-              {element.nurseRoomTime && (
-                <h1>{moment(element.nurseRoomTime).format("DD/MM/YYYY")}</h1>
-              )}
-              {element.doctorTime && (
-                <h1>{moment(element.doctorTime).format("DD/MM/YYYY")}</h1>
-              )}
+              <h1>Criado em:</h1>
+              <h1>{moment(element.createdAt).format("DD/MM/YYYY")}</h1>
+              <h1>Finalizado em:</h1>
+              <h1>{moment(element.createdAt).format("DD/MM/YYYY")}</h1>
             </div>
           );
         })}
