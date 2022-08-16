@@ -1,0 +1,47 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: gray;
+  opacity: 0.5;
+  position: fixed;
+}
+
+.modalWrapperRegister {
+  position: absolute;
+  top: 0;
+  background-color: gray;
+  opacity: 1;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  align-items: center;
+  background-color: white;
+  opacity: 1;
+  margin-top: 20vh;
+  height: 60vh;
+  width: 50%;
+  border-radius: 35px;
+  max-width: 450px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.inputLabel {
+  height: 40px;
+  border-radius: 15px;
+  width: 55%;
+}
+
+.btn {
+  margin-top: 6vh;
+  padding: 1.5vh 6vw;
+  border-radius: 15px;
+  border: 0 none;
+  background-color: #357edd;
+  color: white;
+  font-weight: 900;
+}

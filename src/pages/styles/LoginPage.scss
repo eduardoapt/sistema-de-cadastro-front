@@ -1,0 +1,42 @@
+.modalWrapperLogin {
+  position: absolute;
+  top: 0;
+  background-color: gray;
+  opacity: 1;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  background-color: white;
+  margin-top: 15vh;
+  margin-left: 37%;
+  border-radius: 35px;
+  max-width: 450px;
+
+  .invalidFields {
+    color: red;
+  }
+
+  .inputLabel {
+    height: 40px;
+    border-radius: 15px;
+    width: 30vw;
+    max-width: 300px;
+    margin-top: 3vh;
+    margin-left: 2%;
+  }
+
+  .btn {
+    width: 31vw;
+    margin-top: 3vh;
+    padding: 1.5vh 6vw;
+    border-radius: 15px;
+    border: 0 none;
+    background-color: #357edd;
+    color: white;
+    font-weight: 900;
+    height: 7vh;
+    max-width: 300px;
+    margin-left: 2.5%;
+  }
+}

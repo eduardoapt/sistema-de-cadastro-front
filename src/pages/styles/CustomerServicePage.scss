@@ -1,0 +1,54 @@
+.btnRegister {
+  background-color: #357edd;
+  padding: 1.5vh 5vw;
+  border-radius: 15px;
+  border: 0 none;
+  color: white;
+  font-weight: 900;
+  margin: 4vh 8%;
+  margin-top: 6vh;
+  width: 25vw;
+  max-width: 230px;
+  height: 5vw;
+}
+
+.btnBackPage {
+  background-color: red;
+  padding: 1.5vh 6vw;
+  border-radius: 15px;
+  border: 0 none;
+  color: white;
+  font-weight: 900;
+  margin: 4vh 8%;
+  margin-top: 6vh;
+  margin-left: 22%;
+  width: 25vw;
+  max-width: 230px;
+  height: 5vw;
+}
+
+.servicesWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+  h1 {
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    width: 10%;
+    font-size: 1.8vw;
+    font-weight: 400;
+    border: 1px solid black;
+  }
+
+  h1:first-child {
+    padding-right: 0.5%;
+    padding-left: 1.5%;
+    width: 2%;
+    font-size: 1.8vw;
+    font-weight: 400;
+    border: 1px solid black;
+  }
+}
